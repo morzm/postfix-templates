@@ -1,13 +1,13 @@
 # Guava preconditions Postfix Templates
 
 # Check Operations
-.cn : guava checkNotNull
+.ckn : guava checkNotNull
    java.lang.Object    [com.google.common.base.Preconditions]                →   Preconditions.checkNotNull($expr$)
     
-.ca : guava checkArgument
+.cka : guava checkArgument
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
    java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
    
-.cs : guava checkArgument
+.cks : guava checkArgument
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
    java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
