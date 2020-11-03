@@ -6,3 +6,8 @@
     
 .ca : guava checkArgument
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
+   java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
+   
+.cs : guava checkArgument
+   java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
+   java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
