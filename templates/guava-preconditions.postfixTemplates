@@ -1,6 +1,6 @@
-# Guava Collection Postfix Templates
+# Guava preconditions Postfix Templates
 
-# Iterable and Iterator Operations
+# Check Operations
 .cn : guava checkNotNull
    java.lang.Object    [com.google.common.base.Preconditions]                   →   Preconditions.checkNotNull($expr$)
     
