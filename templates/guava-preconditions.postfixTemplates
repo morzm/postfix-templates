@@ -2,7 +2,7 @@
 
 # Check Operations
 .cn : guava checkNotNull
-   java.lang.Object    [com.google.common.base.Preconditions]                   →   Preconditions.checkNotNull($expr$)
+   java.lang.Object    [com.google.common.base.Preconditions]                →   Preconditions.checkNotNull($expr$)
     
 .ca : guava checkArgument
-   java.lang.boolean      [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
+   java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
