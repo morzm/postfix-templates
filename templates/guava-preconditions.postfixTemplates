@@ -8,6 +8,6 @@
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
    java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
    
-.cks : guava checkArgument
+.cks : guava checkState
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
    java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
