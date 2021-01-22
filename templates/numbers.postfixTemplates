@@ -39,12 +39,12 @@
 	
 .toBigDecimal : convert to BigDecimal
 	java.lang.String         →  new java.math.BigDecimal($expr$)
+	java.lang.Byte          →  new java.math.BigDecimal($expr$)
 	java.lang.Short          →  new java.math.BigDecimal($expr$)
 	java.lang.Float          →  new java.math.BigDecimal($expr$)
 	java.lang.Double         →  new java.math.BigDecimal($expr$)
   	java.lang.Integer        →  BigDecimal.valueOf($expr$)
   	java.lang.Long           →  BigDecimal.valueOf($expr$)
-	NUMBER                   →  new java.math.BigDecimal($expr$)
 	
 .format : format number
 	BYTE                     →  String.format("$format::"%d"$", $expr$)
