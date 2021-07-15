@@ -39,7 +39,7 @@
 	
 .toBigDecimal : convert to BigDecimal
 	java.lang.String         →  new java.math.BigDecimal($expr$)
-	java.lang.Byte          →  new java.math.BigDecimal($expr$)
+	java.lang.Byte           →  new java.math.BigDecimal($expr$)
 	java.lang.Short          →  new java.math.BigDecimal($expr$)
 	java.lang.Float          →  new java.math.BigDecimal($expr$)
 	java.lang.Double         →  new java.math.BigDecimal($expr$)
@@ -55,3 +55,10 @@
 	FLOAT                    →  String.format("$format::"%f"$", $expr$)
 	DOUBLE                   →  String.format("$format::"%f"$", $expr$)
 	java.lang.String         →  String.format($expr$, $END$)
+.toString : wrapper to String 
+        java.lang.Float          →  String.valueOf($expr$)
+	java.lang.Double	 →  String.valueOf($expr$)
+	java.lang.Short		 →  String.valueOf($expr$)
+	java.lang.Integer	 →  String.valueOf($expr$)
+	java.lang.Long 		 →  String.valueOf($expr$)
+	java.lang.Boolean	 →  String.valueOf($expr$)
