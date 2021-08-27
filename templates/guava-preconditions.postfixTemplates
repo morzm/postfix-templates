@@ -7,7 +7,9 @@
 .cka : guava checkArgument
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
    java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
+   BOOLEAN             [com.google.common.base.Preconditions]                →   Preconditions.checkArgument($expr$);
    
 .cks : guava checkState
    java.lang.boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
    java.lang.Boolean   [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
+   BOOLEAN             [com.google.common.base.Preconditions]                →   Preconditions.checkState($expr$);
