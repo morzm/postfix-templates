@@ -1,0 +1,22 @@
+## hutool-assert postfix templates##
+
+.assertNull : hutool-assert assertNull
+    ANY               [cn.hutool.core.lang.Assert]     → Assert.isNull($expr$)
+
+.assertNotNull : hutool-assert assertNotNull
+    ANY               [cn.hutool.core.lang.Assert]     → Assert.notNull($expr$)
+
+.assertNotBlank : hutool-assert assertNotBlank
+    java.lang.String  [cn.hutool.core.lang.Assert]     → Assert.notBlank($expr$)
+
+.assertTrue : hutool-assert assertTrue
+    BOOLEAN           [cn.hutool.core.lang.Assert]     → Assert.isTrue($expr$)
+
+.assertFalse : hutool-assert assertFalse
+    BOOLEAN           [cn.hutool.core.lang.Assert]     → Assert.isFalse($expr$)
+
+.assertNotEmpty : hutool-assert assertNotEmpty
+    ARRAY               [cn.hutool.core.lang.Assert]     → Assert.notEmpty($expr$)
+    java.util.Map       [cn.hutool.core.lang.Assert]     → Assert.notEmpty($expr$)
+    java.lang.Iterable  [cn.hutool.core.lang.Assert]     → Assert.notEmpty($expr$)
+
